@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d5c4b3578484df1f3c063886a8d9e045 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d5c4b3578484df1f3c063886a8d9e045" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d5c4b3578484df1f3c063886a8d9e045 = L.map(
+                "map_d5c4b3578484df1f3c063886a8d9e045",
+                {
+                    center: [35.3, 6.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd01af6adf00bcc131ad8289b0782497 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bd01af6adf00bcc131ad8289b0782497.addTo(map_d5c4b3578484df1f3c063886a8d9e045);
+        
+    
+            var poly_line_36aa4406549354a3d8d6ca793a9edab3 = L.polyline(
+                [[35.555, 6.174], [35.52, 6.15], [34.85, 5.728], [34.92, 5.74], [35.431, 7.146]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d5c4b3578484df1f3c063886a8d9e045);
+        
+    
+            poly_line_36aa4406549354a3d8d6ca793a9edab3.bindTooltip(
+                `<div>
+                     Touristic Route - Aurès
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_03b23c9fb46419c2431b5e5ea72cefaf = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_24aaeee06c5a461bd10bf8fd6c60d858 = L.marker(
+                [35.555, 6.174],
+                {
+}
+            ).addTo(feature_group_03b23c9fb46419c2431b5e5ea72cefaf);
+        
+    
+        var popup_324fa98b93ead37f7b1094c6a257b10a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42a429b13989b9c23ae76a1dd8f4a68b = $(`<div id="html_42a429b13989b9c23ae76a1dd8f4a68b" style="width: 100.0%; height: 100.0%;">Batna</div>`)[0];
+                popup_324fa98b93ead37f7b1094c6a257b10a.setContent(html_42a429b13989b9c23ae76a1dd8f4a68b);
+            
+        
+
+        marker_24aaeee06c5a461bd10bf8fd6c60d858.bindPopup(popup_324fa98b93ead37f7b1094c6a257b10a)
+        ;
+
+        
+    
+    
+            var marker_f71b9195f8b742f95514099868bce4ab = L.marker(
+                [35.52, 6.15],
+                {
+}
+            ).addTo(feature_group_03b23c9fb46419c2431b5e5ea72cefaf);
+        
+    
+        var popup_8a59e8f9ddfa1a3bcfdfdc84513af0c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21a1a0f59830f6c85a317f9cf6b2dfc2 = $(`<div id="html_21a1a0f59830f6c85a317f9cf6b2dfc2" style="width: 100.0%; height: 100.0%;">Timgad</div>`)[0];
+                popup_8a59e8f9ddfa1a3bcfdfdc84513af0c8.setContent(html_21a1a0f59830f6c85a317f9cf6b2dfc2);
+            
+        
+
+        marker_f71b9195f8b742f95514099868bce4ab.bindPopup(popup_8a59e8f9ddfa1a3bcfdfdc84513af0c8)
+        ;
+
+        
+    
+    
+            feature_group_03b23c9fb46419c2431b5e5ea72cefaf.addTo(map_d5c4b3578484df1f3c063886a8d9e045);
+        
+    
+            var feature_group_1a6f9001d08866c4c313f8a8f988ce72 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5f8ed5e766e44c717b950093826060a1 = L.marker(
+                [34.85, 5.728],
+                {
+}
+            ).addTo(feature_group_1a6f9001d08866c4c313f8a8f988ce72);
+        
+    
+        var popup_67134ffff8d9a356644654c05fc3407b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68aac3fb014dedec18856ec9aafea0fb = $(`<div id="html_68aac3fb014dedec18856ec9aafea0fb" style="width: 100.0%; height: 100.0%;">Biskra</div>`)[0];
+                popup_67134ffff8d9a356644654c05fc3407b.setContent(html_68aac3fb014dedec18856ec9aafea0fb);
+            
+        
+
+        marker_5f8ed5e766e44c717b950093826060a1.bindPopup(popup_67134ffff8d9a356644654c05fc3407b)
+        ;
+
+        
+    
+    
+            var marker_befa95215ebeef13edcfd2c1b15b7b1f = L.marker(
+                [34.92, 5.74],
+                {
+}
+            ).addTo(feature_group_1a6f9001d08866c4c313f8a8f988ce72);
+        
+    
+        var popup_59efb8e8a4876a2b3c40471590ba9e23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46ad4d8d44d02408eb4d077a0fa067da = $(`<div id="html_46ad4d8d44d02408eb4d077a0fa067da" style="width: 100.0%; height: 100.0%;">Ziban</div>`)[0];
+                popup_59efb8e8a4876a2b3c40471590ba9e23.setContent(html_46ad4d8d44d02408eb4d077a0fa067da);
+            
+        
+
+        marker_befa95215ebeef13edcfd2c1b15b7b1f.bindPopup(popup_59efb8e8a4876a2b3c40471590ba9e23)
+        ;
+
+        
+    
+    
+            feature_group_1a6f9001d08866c4c313f8a8f988ce72.addTo(map_d5c4b3578484df1f3c063886a8d9e045);
+        
+    
+            var feature_group_406da4d25c2a9798c248312bb18b78cd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_a1de289740835e24e2e588fb90e2e61c = L.marker(
+                [35.431, 7.146],
+                {
+}
+            ).addTo(feature_group_406da4d25c2a9798c248312bb18b78cd);
+        
+    
+        var popup_8359c0a989edea5dd9c27da41808a57d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce8b8d086c3016712c18a9f0f745568d = $(`<div id="html_ce8b8d086c3016712c18a9f0f745568d" style="width: 100.0%; height: 100.0%;">Khenchela</div>`)[0];
+                popup_8359c0a989edea5dd9c27da41808a57d.setContent(html_ce8b8d086c3016712c18a9f0f745568d);
+            
+        
+
+        marker_a1de289740835e24e2e588fb90e2e61c.bindPopup(popup_8359c0a989edea5dd9c27da41808a57d)
+        ;
+
+        
+    
+    
+            feature_group_406da4d25c2a9798c248312bb18b78cd.addTo(map_d5c4b3578484df1f3c063886a8d9e045);
+        
+    
+            var layer_control_3c3b40468eecac6f72190102cdcbb8a8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bd01af6adf00bcc131ad8289b0782497,
+                },
+                overlays :  {
+                    "Batna" : feature_group_03b23c9fb46419c2431b5e5ea72cefaf,
+                    "Biskra" : feature_group_1a6f9001d08866c4c313f8a8f988ce72,
+                    "Khenchela" : feature_group_406da4d25c2a9798c248312bb18b78cd,
+                    "macro_element_4ae802977f8b1ff051274faebf3318a8" : heat_map_4ae802977f8b1ff051274faebf3318a8,
+                },
+            };
+            let layer_control_3c3b40468eecac6f72190102cdcbb8a8 = L.control.layers(
+                layer_control_3c3b40468eecac6f72190102cdcbb8a8_layers.base_layers,
+                layer_control_3c3b40468eecac6f72190102cdcbb8a8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_d5c4b3578484df1f3c063886a8d9e045);
+
+        
+    
+            var heat_map_4ae802977f8b1ff051274faebf3318a8 = L.heatLayer(
+                [[35.555, 6.174], [35.52, 6.15], [34.85, 5.728], [34.92, 5.74], [35.431, 7.146]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_4ae802977f8b1ff051274faebf3318a8.addTo(map_d5c4b3578484df1f3c063886a8d9e045);
+        
+</script>
+</html>
